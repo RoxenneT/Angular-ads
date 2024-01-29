@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card" *ngIf="ad">
+        <h1>{{ ad.title }}</h1>
+        <p>{{ ad.description }}</p>
+        <button *ngIf="!isFavorite" (click)="addToFavorites()">Добавить в избранное</button>
+        <button *ngIf="isFavorite" (click)="removeFromFavorites()">Удалить 🤍</button>
+    </div>
+
+    <div class="coment">
+        <div class="coments" *ngFor="let comment of ad?.comments">
+            <p>{{ comment.text }}</p>
+        </div>
+        <input [(ngModel)]="newComment" placeholder="Добавить комментарий">
+        <button (click)="addComment(newComment)">Добавить</button>
+    </div>
+</div>

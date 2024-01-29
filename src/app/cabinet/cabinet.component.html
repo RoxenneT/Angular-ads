@@ -1,0 +1,27 @@
+<div class="container">
+    <div *ngIf="user">
+        <h3>{{ user.username }}!</h3>
+    </div>
+
+    <div *ngIf="editProfileDialog">
+        <h3>Редактировать профиль</h3>
+        <input [(ngModel)]="newUsername" placeholder="Новое имя подьзователя">
+        <button (click)="editProfile(newUsername)">Сохранить</button>
+    </div>
+
+    <div>
+        <h3>Создать объявление</h3>
+        <input [(ngModel)]="category" placeholder="Категория">
+        <input [(ngModel)]="title" placeholder="Заголовок">
+        <input [(ngModel)]="description" placeholder="Описание">
+        <button (click)="createAd(category, title, description)">Создать</button>
+    </div>
+
+    <div>
+        <h3>Мои объявления</h3>
+        <div class="ads" *ngFor="let ad of myAds">
+            <h3>{{ ad.title }}</h3>
+            <p>{{ ad.description }}</p>
+        </div>
+    </div>
+</div>

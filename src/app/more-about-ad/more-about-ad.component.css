@@ -1,0 +1,92 @@
+.container {
+    width: 99%;
+    min-height: 50%;
+    max-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.coment {
+    width: 99%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.coment > button{
+
+    background-color: #deeaee;
+    border: none;
+    color: black;
+
+    width: 200px;
+    height: 30px;
+}
+
+.coments {
+    width: 99%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+
+    background-color:  #deeaee;
+}
+
+input{
+    width: 99%;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.card {
+    width: 99%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: #92a8d1;
+    /* border: 3px solid #f7786b; */
+}
+
+h3{
+    font-size: 17px;
+}
+
+P{
+    font-size: 20px;
+}
+
+.card>button {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #034f84;
+    background-color: white;
+    border: none;
+}
+
+.card>button:hover {
+    color: white;
+    background-color: #034f84;
+}

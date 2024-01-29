@@ -1,0 +1,20 @@
+<div class="container">
+    <div>
+        <h3>Регистрация</h3>
+        <input [(ngModel)]="username" placeholder="Username">
+        <input [(ngModel)]="email" placeholder="Email">
+        <input [(ngModel)]="password" placeholder="Password">
+        <button (click)="registerUser(username, email, password)">Зарегестрироваться</button>
+    </div>
+
+    <div>
+        <h3>Вход</h3>
+        <input [(ngModel)]="loginUsername" placeholder="Username">
+        <input [(ngModel)]="loginPassword" placeholder="Password">
+        <button (click)="loginUser(loginUsername, loginPassword)">Войти</button>
+    </div>
+
+    <div *ngIf="loggedInUser">
+        <h3>Добро пожаловать, {{ loggedInUser.username }}!</h3>
+    </div>
+</div>

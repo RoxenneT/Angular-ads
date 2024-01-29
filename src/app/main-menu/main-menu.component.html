@@ -1,0 +1,5 @@
+<div *ngFor="let ad of ads" (click)="goToAdDetails(ad.id)">
+    <p>{{ ad.id }}</p>
+    <h3>{{ ad.title }}</h3>
+    <p>{{ ad.description }}</p>
+</div>
